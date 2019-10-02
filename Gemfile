@@ -12,17 +12,9 @@ ruby '2.6.4'
 
 gem 'rails', '~> 5.2.3'
 
+# Use sqlite3 as the database for Active Record
 
-
-group :development, :test do
-
-  # Use sqlite3 as the database for Active Record
-
-  gem 'sqlite3', '~>1.4.1'
-
-end
-
-gem 'pg', '~> 1.1', '>= 1.1.4', group: :production
+gem 'sqlite3', '~> 1.3.6'
 
 # Use Puma as the app server
 
@@ -30,7 +22,7 @@ gem 'puma', '~> 3.11'
 
 # Use SCSS for stylesheets
 
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '5.0.7'
 
 # Use Uglifier as compressor for JavaScript assets
 
@@ -76,7 +68,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 
-gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bootsnap', '1.4.1', require: false
 
 
 
@@ -104,13 +96,13 @@ group :test do
 
   # Adds support for Capybara system testing and selenium driver
 
-  gem 'capybara', '>= 2.15'
+  gem 'capybara' , '3.15.0'
 
   gem 'selenium-webdriver'
 
   # Easy installation and use of chromedriver to run system tests with Chrome
 
-  gem 'chromedriver-helper', '1.2.0'
+  gem 'chromedriver-helper'
 
 end
 
@@ -119,7 +111,3 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-
-
-gem 'simplecov', '~> 0.17.1', require: false, group: :test
