@@ -15,4 +15,4 @@ deploy:
 provider: heroku
   api_key:
     secure: VQbxB6ylKlHnBAW8ejBI4evRGbsnNLYef51vGMlDfQUeh7HFerPej78xwwH4lf05owaS758kkFfcpJ08GdPqi7Be16u/YGBfUM4SPiXhc0jGO3HNunSBL4u5HkFTRmXIIcpqkmS3PxFGfOKfpI2ydTaoI/1cpRflkxpy4dX4E+4=
-    app: salty-plains-69715 
+ 
