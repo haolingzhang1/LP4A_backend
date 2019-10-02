@@ -2,21 +2,18 @@ langugae: ruby
 rvm:
 - 2.3.3
 before_script:
-- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
-  > ./cc-test-reporter
+- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
 - chmod +x ./cc-test-reporter
-- "./cc-test-reporter before-build"
+- ./cc-test-reporter before-build
 script:
 - bundle exec rails db:migrate RAILS_ENV=test
 - bundle exec rake
 after_script:
-- "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
+- ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 deploy:
 provider: heroku
   api_key:
-    secure: VQbxB6ylKlHnBAW8ejBI4evRGbsnNLYef51vGMlDfQUeh7HFerPej78xwwH4lf05owaS758kkFfcpJ08GdPqi7Be16u/YGBfUM4SPiXhc0jGO3HNunSBL4u5HkFTRmXIIcpqkmS3PxFGfOKfpI2ydTaoI/1cpRflkxpy4dX4E+4=
-  run:
+ secure: VQbxB6ylKlHnBAW8ejBI4evRGbsnNLYef51vGMlDfQUeh7HFerPej78xwwH4lf05owaS758kkFfcpJ08GdPqi7Be16u/YGBfUM4SPiXhc0jGO3HNunSBL4u5HkFTRmXIIcpqkmS3PxFGfOKfpI2ydTaoI/1cpRflkxpy4dX4E+4=
 
-    - "bundle install --without development test"
 
-    - "bundle exec rails db:migrate"
+ 
