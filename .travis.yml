@@ -14,7 +14,4 @@ script:
 - bundle exec rake
 after_script:
 - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
-deploy:
-  provider: heroku
-  api_key:
-    secure: rywtZRY345JBuO0B5RsBsIz7vQekxfS0JGaDyx31QZCgJXCKs/6R2aYlD3m4zCYsGJfQwol//XVcHIAv94sMwZ5Ctvjii8vqpY+Vqe7zE3hnW0w59i8dMF2keoacZATxpc6Lth7LQIMBNRWnPLJ5csNlZGQslTTJPA1QScJDnyX3HDxxiBl2zD8a1+xeQtfEbKjQi8IaEXrRbGNPJghUNH+tedyEqUdnbp+qaPNFE9TuIQv/Y3py44wsrdb6LbWbAwFc4mgzaFhYWH9jlR+oJfAZu/e9JUH67GYwHrkI9hedCkEA+0zJ/QbkvlM+wyvKwTNiO2LsYpMVHFtbDhxwu2drCQjtWIGAhWy+/Cs/QUwMgM0LiPdlA90Gg5V+3K3HXaHnima9Xg6kAtuY0JgTLBzPFoRwcy2U9ekLaGbyFM4L9l27Kx18UsThku4hSc/EGO7nwyu/kY3IiYxpfXgvQwY9g92tVk1GPAry4x15fFYpwJAOyuf5ijYYI7uFzHziUIOcYOFa4RHi1boBZYcSnCUu5RPf7/sno/fGe5yW9lNU3RV0ntN4ZHr55fmKejyMRj0YyuTASDp6H3NIaORPWtlrOiwVJbnQHEoHxCtm0Ng0GdxfNIUT6foNKK+sFzhX/bIT0jVlQBUy66NTxsW4KzZEVDZYl+Pzyym1fcTkebc=
+
