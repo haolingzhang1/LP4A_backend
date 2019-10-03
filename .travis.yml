@@ -14,8 +14,3 @@ script:
 - bundle exec rake
 after_script:
 - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
-deploy:
-  provider: heroku
-  api_key:
-    secure:   LHHh22O3DV4bVwMcD5VULpltKcoB2VkIuOv63LuaMRLxug8BIUYaHmFkmTpSlY8zFFUsLh8PUFCca/N5UNubY9rVQ5IwRD0XJuM6ZCF/d4k37Z1rRe3pqv1LUSSN1ZDkLh5TDRfx0FIjOunPMks6A7zTjVVx4lfN4qpyl1n6c+VIGjG4PUImEW0eqaszun7LMCWpmrHgvdu5qhA1fMVLFtcxO02jh0A1im55A1vL/O/2GTc8eRwHkOZkUSyQYl/3u8eKeBQ+kI15+ou+rqvQLQ1+VOb9Dpmoq/F+LHbfNV0K6ysCqUDQvraugGq7ThHJJsePgLbWIcBe8Wr1jEqi5CKZsgaUdVANT61cHEeTLjRscbosfZ6I244b1/Ce+ZzcoV2upDqrJxBhBJmLJ/EoBUyVCx9CfFB1gYR7nLVJ4usnBG4KNdN2G+0ZGlq9+Q1Z0zG0bLtUgEpElD4vIZthb/UE50z03JS0WUA1qfqy6QJSmU9mgYZRzgmUGet0QhfIvgWVO3Lcsq9Pi85aOVv9DwWUAAT2QVpYWN+IZTmJzbWU5jnXVswWdhaKw+SlWrExV4GLzRheOPv6pSlIdidKS7S+OJneJ8aXc0j/gKEWkCsZuVp356oETVioTDQJPopmSyAKxpULYL+hmFr0PA6brIc5VhIwyXHcpWd9sfV3MBU=
-   app: salty-plains-69715
