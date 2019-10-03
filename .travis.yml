@@ -1,6 +1,6 @@
 langugae: ruby
 rvm:
-- 2.3.3
+-  2.6.5
 before_script:
 - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
   > ./cc-test-reporter
