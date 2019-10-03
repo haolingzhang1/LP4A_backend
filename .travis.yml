@@ -1,6 +1,6 @@
 langugae: ruby
 rvm:
--  2.6.5
+- 2.6.5
 before_script:
 - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
   > ./cc-test-reporter
@@ -12,6 +12,5 @@ script:
 after_script:
 - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
 deploy:
- provider: heroku
   api_key:
-    secure: VQbxB6ylKlHnBAW8ejBI4evRGbsnNLYef51vGMlDfQUeh7HFerPej78xwwH4lf05owaS758kkFfcpJ08GdPqi7Be16u/YGBfUM4SPiXhc0jGO3HNunSBL4u5HkFTRmXIIcpqkmS3PxFGfOKfpI2ydTaoI/1cpRflkxpy4dX4E+4=
+    secure: H4sw4ablip4Foht7qifBlQwcM3ynP4mmbOw+/CEL+9kEPQHKcMrQzFuotnijwIc1D+poUQLmyhWdKWbCJyp5mhUYF8NqGKPW1RYrH3sz7UPexGpKSMqxln57sp9RApmqHvxTesClgc+G/YXTv395yVDxptWDlMPSf3/3NI97zg3yOZj+wl85Oei1Zvaajdi1X6uY0+rnne2J2Vg9gdiRRSI6jXKYVFajq+eb5aXLDMkeqrC7Wj8HPYgNhUN5azNUUc+K6LMRdnR/UEBMjq5KULo67VaU2i8oAVo21p1DpnmjWoecc9XZmp/Eindj2UXm4qWBxljnWjGm/baxMP+qz7WwaPXycRCo+c4PNlvlwRDq7uYKlb09BiiV7ZATYGB9NHhveDrE6BjzO4H4ARHmXP7jODLZYmzu/hyDC320Oa6B6SbiuY5In4ONH+ZxiZBm777B18fdZT5Qbh+gfgdDJ8MZy/CERAP/8NdbbL5piBRXRgupFy4G/M+3QffY3nSHJkP6eN2Nj/1b8cI06YSBEv6VUKGYaeTJctZYn0yK/xBxS87vwvyYMJfVsJ/biL+D6txnc2mK/mIIRuU8cPuyY59apjsJaY9TAtZnz2jKXspbcdqo3TFS3yEE77Ln7kLc4NmQIYa3PgWzP+R+5ssxRNDhtN9NecX0mE0mEWM0M9k=
