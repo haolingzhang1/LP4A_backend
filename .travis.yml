@@ -3,7 +3,7 @@ env:
   - CC_TEST_REPORTER_ID=83baad8519999a5b5e6d714d446637d03275c0314a11cb5fc61d0f410105e633
 language: ruby
 rvm:
-- 2.6.5
+- 2.6.4
 before_script:
 - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
   > ./cc-test-reporter
@@ -15,7 +15,7 @@ script:
 after_script:
 - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
 deploy:
-provider: heroku
-  api_key:
+  provider: heroku
+    api_key:
     secure: eLep6KinKORAvM71dS5yqcDT3MWSnyQ06ePqA3kgOyYQZS+3oVBwPhgSaKnuVxr8tchXZtGrm03gd4dOpparLj6PY/3v3zs/gimTaQgtIY6FGCP9pU2b9HkwppVvvWXAY7a74QLTk1ZPm2p5eZAQJlaLbER2cXCdQ3oN3Lp7vAUz3tKxXiVXmTByLM9GFfNInwpljV1l1Kvhu1QjrJ3xWvl5FA5/bEckl47KtN7fPJBIR1kWl9J2NKnF1rlR3RhIzLvJDiYHJlZ9ky785rLJB4A/dW/zYteJZPvicozztsW80aPbvgCs1+SN1G2fiwlX7rv0EYfxYrCNSA6MatEyeKFSKQw197nCAv+/OLSBSaUfWcRYPt7cqiypGjVzQ4UIpyu366uVaiqtwprTi09f3jyOVJOVPEpjTrZfJJh/o7yFj4Vo2Ps7BGGPJTgi5yY4+kjgTMc9aA6KoXW/H7YW5sqYRmQd3WmkDFbIjS98B53uB53kEAEZEacYOCqi6UrCzeWiljfkdiXa3wMuja4egaAzrxTgvqZIqngZ/zULQho1ud5lo8K5n+JSMCEHhftjiuCl2vIfBDYwu4U0cG7IB8KSg0YTgjXivPD3UlPYHbV2wBNHVbfFP1IU+kVaoH1iJiVzDl4MHNbCVGJUm6uUDiXn0iXEJkdo7y8cGtfuABI=
   app: salty-plains-69715
